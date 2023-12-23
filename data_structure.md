@@ -8,7 +8,7 @@
 - [Stacks](#stacks)
 - [Queues](#queues)
 - [Recursion](#recursion)
-- Linked lists
+<!-- - Linked lists
   - Singly linked lists
   - Doubly linked lists
 - Trees
@@ -18,7 +18,7 @@
   - Undirected and directed graphs
   - Weighted and unweighted graphs
   - How to represent graphs
-- Roundup
+- Roundup -->
 
 ## What is a data structure?
 
