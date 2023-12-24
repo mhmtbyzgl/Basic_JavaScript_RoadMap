@@ -310,4 +310,4 @@ The second loop is a `for...of` loop. This loop specifically iterates over the e
 
 In conclusion, the `for...in` loop traverses through all properties of the array (both elements and extra properties), while the `for...of` loop solely focuses on the elements of the array.
 
-[Go Top](#table-of-content)
+[Go Top](#loops-and-iterations)
