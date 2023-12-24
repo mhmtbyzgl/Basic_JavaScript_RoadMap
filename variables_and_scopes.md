@@ -1,4 +1,6 @@
-# Table Of Content
+# Variables and Scopes
+
+## Table Of Content
 
 - [Variables](#variables)
   - [Tips for Naming Variables](#tips-for-naming-variables)
@@ -115,4 +117,4 @@ function myPC() {
 // pcName can NOT be used here
 ```
 
-[Go Top](#table-of-content)
+[Go Top](#variables-and-scopes)
