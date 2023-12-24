@@ -225,3 +225,5 @@ console.log(factorial(5)); // It returns 120
 ```
 
 Recursion is a powerful concept used to solve problems that exhibit repetitive structures and can lead to elegant and concise solutions. However, it requires careful handling of base cases and understanding of the call stack, as excessive recursion can lead to performance issues or stack overflow errors.
+
+[Go Top](#table-of-content)
