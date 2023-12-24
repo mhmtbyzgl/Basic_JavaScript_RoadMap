@@ -24,13 +24,13 @@
 
 - Certain words may not be used as variable names, because they have other meanings within JavaScript. Check out this complete list of the reserved words.
 
-  ### ==!!! ------------------------------- !!! ------------------------------- !!!==
+  ### !!! ------------------------------- !!! ------------------------------- !!!
 
-- ==**Don’t use names that are too short.**== Simple one-letter names or names that don’t make sense are not a good option when naming variables.
-- ==**Use more than one word to name your variable.**== This will ensure your variable name is precise.
-- ==**When using more than one word in your variable names, always put the adjective to the left.**== For example, this is correct: var smallChar.
-- ==**Pick a style for names with more than one word, and stick to it.**== The two most common ways to join words to create a name are camelCase and using an underscore (\_). JavaScript is flexible — either method works.
-  ### ==!!! ------------------------------- !!! ------------------------------- !!!==
+- **Don’t use names that are too short.** Simple one-letter names or names that don’t make sense are not a good option when naming variables.
+- **Use more than one word to name your variable.** This will ensure your variable name is precise.
+- **When using more than one word in your variable names, always put the adjective to the left.** For example, this is correct: var smallChar.
+- **Pick a style for names with more than one word, and stick to it.** The two most common ways to join words to create a name are camelCase and using an underscore (\_). JavaScript is flexible — either method works.
+  ### !!! ------------------------------- !!! ------------------------------- !!!
 
 ## Scopes
 
