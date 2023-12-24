@@ -1,3 +1,24 @@
+## Table of Content
+
+- [Data Types](#data-types)
+- [Primitive Data Types](#primitive-data-types)
+  - [Null](#1-null)
+  - [Undefined]()
+  - [Boolean](#3-boolean)
+  - [Number](#4-number)
+  - [BigInt](#5-bigint)
+  - [String](#6-string)
+  - [Symbol](#7-symbol)
+- [Non-primitive Data Types](#non-primitive-data-types)
+  - [Arrays](#arrays)
+  - [Object](#object)
+- [Checking Data Types and Casting](#checking-data-types-and-casting)
+  - [Checking Data Types](#checking-data-types)
+  - [Changing Data Type (Casting)](#changing-data-type-casting)
+    - [String to Int](#string-to-int)
+    - [String to Float](#string-to-float)
+    - [Float to Int](#float-to-int)
+
 ## Data Types
 
 ```mermaid
@@ -16,7 +37,10 @@ Primitive data types hold a single value. They can be compared by value and cann
 
 ### Primitive Data Types
 
-**1. Null:** The null type contains only the value "null". It does not take any other value.
+#### 1. Null:
+
+The null type contains only the value "null". It does not take any other value.
+
 **Example:**
 
 ```js
@@ -24,7 +48,10 @@ let age = null;
 // age is a null type
 ```
 
-**2. Undefined:** Undefined type has only the value "undefined". It does not take any other value. The meaning of `undefined` is “value is not assigned”. I mean if a variable is declared, but not assigned any value to variable is undefined.
+#### 2. Undefined:
+
+Undefined type has only the value "undefined". It does not take any other value. The meaning of `undefined` is “value is not assigned”. I mean if a variable is declared, but not assigned any value to variable is undefined.
+
 **Examples:**
 
 ```js
@@ -32,7 +59,9 @@ let x;
 // x is a undefind type
 ```
 
-**3. Boolean:** The boolean type has only two values: `true` and `false`. This type is commonly used to store yes/no values: `true` means “yes, correct”, and `false` means “no, incorrect”.
+#### 3. Boolean:
+
+The boolean type has only two values: `true` and `false`. This type is commonly used to store yes/no values: `true` means “yes, correct”, and `false` means “no, incorrect”.
 
 **Examples:**
 
@@ -49,7 +78,9 @@ let z = 7;
 ); // Returns false
 ```
 
-**4. Number:** The _number_ type represents both integer and floating point numbers. Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: `Infinity`, `-Infinity` and `NaN`.
+#### 4. Number:
+
+The _number_ type represents both integer and floating point numbers. Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: `Infinity`, `-Infinity` and `NaN`.
 
 - `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that’s greater than any number. We can get it as a result of division by zero.
 
@@ -77,7 +108,9 @@ let k = NaN / 3;
 // m, n and k are NaN type
 ```
 
-**5. BigInt:** All JavaScript numbers are stored in a a 64-bit floating-point format. In JavaScript, the “number” type cannot safely represent integer values larger than (2^53^-1) (that’s `9007199254740991`), or less than -(2^53^-1) for negatives. To be really precise, the “number” type can store larger integers (up to `1.7976931348623157 * 10308`), but outside of the safe integer range ±(2^53^-1) there’ll be a precision error, because not all digits fit into the fixed 64-bit storage. So an “approximate” value may be stored.
+#### 5. BigInt:
+
+All JavaScript numbers are stored in a a 64-bit floating-point format. In JavaScript, the “number” type cannot safely represent integer values larger than (2^53^-1) (that’s `9007199254740991`), or less than -(2^53^-1) for negatives. To be really precise, the “number” type can store larger integers (up to `1.7976931348623157 * 10308`), but outside of the safe integer range ±(2^53^-1) there’ll be a precision error, because not all digits fit into the fixed 64-bit storage. So an “approximate” value may be stored.
 
 **Example:**
 
@@ -101,7 +134,9 @@ A `BigInt` value is created by appending `n` to the end of an integer.
 	// x and y are BigInt type
 ```
 
-**6. String:** Strings are written with quotes. You can use single or double quotes.
+#### 6. String:
+
+Strings are written with quotes. You can use single or double quotes.
 
 In JavaScript, there are 3 types of quotes.
 
@@ -229,11 +264,13 @@ console.log(string.repeat(5)); // JavaScriptJavaScriptJavaScriptJavaScriptJavaSc
 ("the result is ${1 + 2}"); // the result is ${1 + 2} (double quotes do nothing)
 ```
 
-**7. Symbol:** A [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) is a **unique** and **immutable** primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.
+#### 7. Symbol:
+
+A [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) is a **unique** and **immutable** primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.
 
 ### Non-primitive Data Types
 
-**Array:**
+#### Arrays:
 
 - Strings can hold more than one value.
 - They are written with square brackets.
@@ -265,7 +302,7 @@ nums2[1] = 2; // nums2 become [1,2,3]
 nums2[2] = "three"; // nums2 become [1,2,"three"]
 ```
 
-**Object:**
+#### Object:
 
 - Objects are variables too.
 - But objects can contain many values.
@@ -389,3 +426,5 @@ let num = 15.31;
 let numToInt = parseInt(num);
 console.log(numInt); // 15
 ```
+
+[Go Top](#table-of-content)
