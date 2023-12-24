@@ -75,7 +75,7 @@ console.log(person["age"]); // Output: 30
 
 JavaScript objects can also contain methods, which are functions associated with the object.
 
-==**NOTE:** We will discuss the use of the keyword "this" later on. For now, just know that this usage should be like this.==
+_**NOTE:**_ We will discuss the use of the keyword "this" later on. For now, just know that this usage should be like this.
 
 **Example:**
 
@@ -208,7 +208,7 @@ factorial(1) = 1
 
 In this examples `factorial(1)` our **base case** because we use it for solve other factorials problems.
 
-==**NOTE:** We will discuss the use of the if condition later on.==
+_**NOTE:**_ We will discuss the use of the if condition later on.
 
 ```js
 const factorial = (n) => {
