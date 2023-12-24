@@ -1,3 +1,13 @@
+# Table Of Content
+
+- [Variables](#variables)
+  - [Tips for Naming Variables](#tips-for-naming-variables)
+- [Scopes](#scopes)
+  - [Global Scope](#1-global-scope)
+  - [Function Scope](#2-function-scope)
+  - [Block Scope](#3-block-scope)
+  - [Local Scope](#4-local-scope)
+
 ## Variables
 
 - To declare variables, we use one of the `var`, `let`, or `const` keywords.
@@ -27,51 +37,57 @@
 - In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared.
 - The three types of Scope are Global Scope, Function Scope, and Block Scope.
 
-  **1. Global Scope:** Variables declared outside any function or curly braces ’{}’ have Global Scope, and can be accessed from anywhere within the same Javascript code. `var`, `let` and `const` all provide this Scope.
+### 1. Global Scope:
 
-  **Examples:**
+Variables declared outside any function or curly braces ’{}’ have Global Scope, and can be accessed from anywhere within the same Javascript code. `var`, `let` and `const` all provide this Scope.
 
-  ```js
-  let pcName = "Apple";
-  // code here CAN use pcName
+**Examples:**
 
-  function myFunction() {
-    // code here CAN also use pcName
-  }
-  ```
+```js
+let pcName = "Apple";
+// code here CAN use pcName
 
-  **2. Function Scope:** Variables declared within a function can only be used within that same function. Outside that function, they are undefined. `var`, `let` and `const` all provide this Scope.
+function myFunction() {
+  // code here CAN also use pcName
+}
+```
 
-  **Examples:**
+### 2. Function Scope:
 
-  ```js
-  function myFunction() {
-    var pcName = "Apple"; // Function Scope
-  }
-  ```
+Variables declared within a function can only be used within that same function. Outside that function, they are undefined. `var`, `let` and `const` all provide this Scope.
 
-  ```js
-  function myFunction() {
-    let pcName = "Apple"; // Function Scope
-  }
-  ```
+**Examples:**
 
-  ```js
-  function myFunction() {
-    const pcName = "Apple"; // Function Scope
-  }
-  ```
+```js
+function myFunction() {
+  var pcName = "Apple"; // Function Scope
+}
+```
 
-  **3. Block Scope:** A block is any part of JavaScript code bounded by ’{}‘. Variables declared within a block can not be accessed outside that block. This Scope is only provided by the `let` and `const` keywords. If you declare a variable within a block using the `var` keyword, it will NOT have Block Scope.
+```js
+function myFunction() {
+  let pcName = "Apple"; // Function Scope
+}
+```
 
-  **Examples:**
+```js
+function myFunction() {
+  const pcName = "Apple"; // Function Scope
+}
+```
 
-  ```js
-  {
-    let x = 2;
-  }
-  // x can NOT be used here
-  ```
+### 3. Block Scope:
+
+A block is any part of JavaScript code bounded by ’{}‘. Variables declared within a block can not be accessed outside that block. This Scope is only provided by the `let` and `const` keywords. If you declare a variable within a block using the `var` keyword, it will NOT have Block Scope.
+
+**Examples:**
+
+```js
+{
+  let x = 2;
+}
+// x can NOT be used here
+```
 
 - Variables declared with the `var` keyword can NOT have block scope.
 
@@ -82,17 +98,21 @@
   // x CAN be used here
   ```
 
-  **4. Local Scope:** Local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed. `var`, `let` and `const` all provide this Scope.
+### 4. Local Scope:
 
-  **Examples:**
+Local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed. `var`, `let` and `const` all provide this Scope.
 
-  ```js
-  // pcName can NOT be used here
+**Examples:**
 
-  function myPC() {
-    let pcName = "Apple";
-    // pcName CAN be used here
-  }
+```js
+// pcName can NOT be used here
 
-  // pcName can NOT be used here
-  ```
+function myPC() {
+  let pcName = "Apple";
+  // pcName CAN be used here
+}
+
+// pcName can NOT be used here
+```
+
+[Go Top](#table-of-content)
