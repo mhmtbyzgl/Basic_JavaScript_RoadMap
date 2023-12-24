@@ -1,3 +1,5 @@
+# Data Types
+
 ## Table of Content
 
 - [Data Types](#data-types)
@@ -427,4 +429,4 @@ let numToInt = parseInt(num);
 console.log(numInt); // 15
 ```
 
-[Go Top](#table-of-content)
+[Go Top](#data-types)
