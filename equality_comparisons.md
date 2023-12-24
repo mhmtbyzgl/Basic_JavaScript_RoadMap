@@ -82,3 +82,5 @@ const person = {
 console.log(person.dog?.color); // It returns "Black"
 console.log(person.cat?.color); // Undefined
 ```
+
+[Go Top](#table-of-content)
