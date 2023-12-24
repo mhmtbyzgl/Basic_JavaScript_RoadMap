@@ -4,3 +4,4 @@
 - [Data Types](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/data_types.md)
 - [Data Sturucture](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/data_structure.md)
 - [Equality Comparisons](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/equality_comparisons.md)
+- [Loops](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/loops.md)
