@@ -6,3 +6,4 @@
 - [Equality Comparisons](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/equality_comparisons.md)
 - [Loops and Iterations](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/loops_and_iterations.md)
 - [Control Flow](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/control_flow.md)
+- [Functions](https://github.com/mhmtbyzgl/Basic_JavaScript_RoadMap/blob/main/functions.md)
