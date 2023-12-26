@@ -13,7 +13,7 @@
   - [Object Method Binding](#6-object-method-binding)
   - [Explicit Function Binding](#7-explicit-function-binding)
   - [Function Borrowing](#8-function-borrowing)
-- [This Precedence](#this-precedence)
+- [`this` Precedence](#this-precedence)
 
 ## What is `this`?
 
@@ -177,7 +177,7 @@ let fullName = person.fullName.bind(member);
 console.log(fullName()); // Mahmut BEYAZGÜL
 ```
 
-## This Precedence:
+## `this` Precedence:
 
 To determine which object `this` refers to; use the following precedence of order.
 
