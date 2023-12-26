@@ -21,13 +21,7 @@ This behavior is commonly used in web development to handle tasks that might tak
 
 ## How Can We Use Asynchronous JavaScript?
 
-Asynchronous operations in JavaScript are typically managed as follows:
-
-- callbacks,
-- promises or
-- async/await.
-
----
+Asynchronous operations in JavaScript are typically managed using callbacks, promises, or more recently, async/await syntax.
 
 - **Callbacks:** Functions passed as arguments to other functions, executed after the completion of a particular task. This approach can lead to callback hell, where nested callbacks make code hard to read and maintain.
 
