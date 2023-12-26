@@ -2,16 +2,14 @@
 
 ## Table of Content
 
-- [What is the DOM?]()
-- [What is the HTML DOM?]()
-- [HTML DOM Document]()
-  - [Finding HTML Elements]()
-  - [Changing HTML Elements]()
-  - [Adding and Deleting Elements]()
-  - [Adding Events Handlers]()
-  - [Finding HTML Objects]()
-  - []()
-- []()
+- [What is the DOM?](#what-is-the-dom)
+- [What is the HTML DOM?](#what-is-the-html-dom)
+- [HTML DOM Document](#html-dom-document)
+  - [Finding HTML Elements](#1-finding-html-elements)
+  - [Changing HTML Elements](#2-changing-html-elements)
+  - [Adding and Deleting Elements](#3-adding-and-deleting-elements)
+  - [Adding Events Handlers](#4-adding-events-handlers)
+  - [Finding HTML Objects](#5-finding-html-objects)
 
 ## What is the DOM?
 
@@ -188,3 +186,5 @@ div.appendChild(h1);
 ```
 
 ![Example_4](img/html_dom/Example_4.png)
+
+[Go Top](#dom-document-object-model)
