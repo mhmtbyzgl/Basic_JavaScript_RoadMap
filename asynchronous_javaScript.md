@@ -3,11 +3,7 @@
 ## Table of Content
 
 - [What is Asynchronous JavaScript?](#what-is-asynchronous-javascript)
-- []()
-- []()
-- []()
-- []()
-- []()
+- [How Can We Use Asynchronous JavaScript?](#how-can-we-use-asynchronous-javascript)
 
 ## What is Asynchronous JavaScript?
 
@@ -22,6 +18,8 @@ Many functions provided by browsers, especially the most interesting ones, can p
 This behavior is commonly used in web development to handle tasks that might take time to complete, such as fetching data from a server, reading files, or executing time-consuming processes.
 
 ---
+
+## How Can We Use Asynchronous JavaScript?
 
 Asynchronous operations in JavaScript are typically managed as follows:
 
@@ -63,3 +61,5 @@ fetchData()
 ```
 
 In this example function `fetchData()` uses `async/await` to fetch data from an API asynchronously. The `await` keyword is used to pause the execution until the `promise` returned by fetch resolves or rejects. The `try/catch` block is used to handle any potential errors during the asynchronous operations.
+
+[Go Top](#asynchronous-javascript)
