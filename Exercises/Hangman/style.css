@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: khaki;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  /* padding: 10px 10px;
+  height: 100px;
+  width: 400px;
+  position: relative; */
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  align-items: center;
+  justify-content: center;
+}
+
+/* .container h1 {
+  align-items: center;
+  justify-content: center;
+} */
+
+.wrongLetters {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  position: relative;
+}
+
+.wrongLetters p {
+  font-size: 30px;
+  color: red;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.correctWord {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.correctWord div {
+  display: flex;
+}
+
+#correctLetters {
+  margin: 5px;
+}
+
+#popup {
+  background-color: green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+#allWordsPage {
+  background-color: cyan;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.548);
+}
+.modal div {
+  position: relative;
+  min-width: 30%;
+  min-width: 30;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: white;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  overflow: auto;
+}
+#modal-kapat {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: gray;
+  padding: 0.5rem;
+  border-bottom-left-radius: 1rem;
+  cursor: pointer;
+}
+#modal-kapat:hover {
+  background: rgb(102, 102, 102);
+}
+
+.banner {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text button {
+  background: #6c63ff;
+  color: white;
+  border: 0;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.text button:hover {
+  background: #6b63ffc0;
+}
+/* List of Words */
+
+/* End of the List of Words */
+
+/* End Of The Modal */

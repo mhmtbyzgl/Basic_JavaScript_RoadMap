@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <button id="allWordsBtn">Tüm Kelimeler</button>
+
+  <div class="header">
+    <h1 class="title">Adam Asmaca</h1>
+    <p>Kelimeyi bulmak için 5 tahmin hakkınız mevcut. Lütfen bir harf giriniz.</p>
+  </div>
+
+  <div class="container" id="mainContainer">
+
+    <div class="correctWord">
+      <div id="correctLetters"></div>
+    </div>
+
+    <div class="wrongLetters" id="wrongLetters">
+      <h2 id="wrongLettersTitle"></h2>
+      <p id="wrongLettersP"></p>
+    </div>
+    <span id="hp"></span>
+  </div>
+
+  <div id="popup">
+    <p id="message"></p>
+    <p id="trueWord"></p>
+    <button id="playAgain">Tekrar Oyna</button>
+  </div>
+
+  <div class="modal">
+    <div>
+      <h3 id="modal-kapat">x</h3>
+      <label>
+        <button id="addWordBtn">Kelime Ekle</button>
+        <!-- <button id="deleteWordBtn">Kelime Sil</button> -->
+      </label> </br>
+      <label>Kelimeler:</label>
+      <div>
+        <ul id="listOfWords">
+          <li id="liList">
+            <button id="deleteWordBtn"></button>
+            <button id="editWordBtn"></button>
+
+          </li>
+
+        </ul>
+      </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
