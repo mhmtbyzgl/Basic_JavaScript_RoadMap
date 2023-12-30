@@ -108,7 +108,6 @@ function keyControl() {
           wrongGuesses.push(letter);
           wrongLetterDisplay();
           wrongGuess();
-          console.log(hp);
         }
       }
     }
@@ -173,7 +172,6 @@ function addingWord() {
 }
 
 function deletingWord(index) {
-  console.log("silinen index:", index);
   if (index > -1) {
     wordList.splice(index, 1);
     localStorage.setItem("words", JSON.stringify(wordList));
