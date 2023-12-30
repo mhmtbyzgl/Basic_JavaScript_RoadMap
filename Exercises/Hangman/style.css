@@ -11,10 +11,6 @@ body {
 }
 
 .container {
-  /* padding: 10px 10px;
-  height: 100px;
-  width: 400px;
-  position: relative; */
   align-items: center;
   justify-content: center;
 }
@@ -22,11 +18,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* .container h1 {
-  align-items: center;
-  justify-content: center;
-} */
 
 .wrongLetters {
   display: flex;
@@ -69,18 +60,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* 
-#allWordsPage {
-  background-color: cyan;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-} */
 
 /* Modal */
 
@@ -139,8 +118,5 @@ body {
 .text button:hover {
   background: #6b63ffc0;
 }
-/* List of Words */
-
-/* End of the List of Words */
 
 /* End Of The Modal */

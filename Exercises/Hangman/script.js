@@ -6,10 +6,8 @@ const HP = document.getElementById("hp");
 const playAgain = document.getElementById("playAgain");
 const trueWord = document.getElementById("trueWord");
 const addWordBtn = document.getElementById("addWordBtn");
-// const allWordsBtn = document.getElementById("allWordsBtn");
 const allWordsModal = document.getElementById("allWordsModal");
 const wrongLettersTitle = document.getElementById("wrongLettersTitle");
-// const deleteWordBtn = document.getElementById("deleteWordBtn");
 const modalBtn = document.getElementById("allWordsBtn");
 const modal = document.querySelector(".modal");
 const modalKapat = document.getElementById("modal-kapat");
@@ -28,15 +26,22 @@ function refreshData() {
     "react",
     "developer",
   ];
-  localStorage.setItem("words", JSON.stringify(localData));
+  const lowerLocalData = [];
+  localData.forEach((data) => {
+    lowerData = data.toLowerCase();
+    lowerLocalData.push(lowerData);
+    localStorage.setItem("words", JSON.stringify(lowerLocalData));
+  });
 }
+
+// If you get error: "wordList is null" run line below JUST FOR ONE TIME
+// refreshData();
 
 let wordList = JSON.parse(localStorage.getItem("words"));
 let hp = 5;
 let selectedWord = selectWord();
 const correctGuesses = [];
 const wrongGuesses = [];
-console.log(wordList);
 
 function main() {
   displayWord();
@@ -49,7 +54,6 @@ function selectWord() {
 }
 
 function displayWord() {
-  console.log(selectedWord);
   correctLetters.innerHTML = `${selectedWord
     .split("")
     .map(
@@ -121,11 +125,10 @@ modalKapat.addEventListener("click", () => {
 });
 
 function displayAllWords() {
-  console.log(wordList);
   listOfWords.innerHTML = `${wordList
     .map(
       (element, index) =>
-        `<li id="liList">${element} <button id="deleteWordBtn" value="${index}" onclick="deletingWord(${index})">x</button>  <button id="editWordBtn" value="${index}" onclick="editingWord(${element},${index})">...</button></li>`
+        `<li id="liList">${element} <button id="deleteWordBtn" value="${index}" onclick="deletingWord(${index})">x</button>  <button id="editWordBtn" value="${index}" onclick="editingWord('${element}', ${index})">...</button></li>`
     )
     .sort()
     .join("")}`;
@@ -154,13 +157,14 @@ playAgain.addEventListener("click", function () {
 
 function addingWord() {
   let newWord = prompt("Eklemek istediğiniz kelimeyi giriniz.");
-  if (!wordList.includes(newWord)) {
-    if (newWord === null) {
+  lowerWord = newWord.toLowerCase();
+  if (!wordList.includes(lowerWord)) {
+    if (lowerWord === null) {
       return;
-    } else if (newWord !== null && newWord.trim() === "") {
+    } else if (lowerWord !== null && lowerWord.trim() === "") {
       alert("Lütfen bu alanı boş bırakmayınız!!!");
     } else {
-      wordList.push(`${newWord}`);
+      wordList.push(`${lowerWord}`);
       localStorage.setItem("words", JSON.stringify(wordList));
     }
   } else {
@@ -178,19 +182,19 @@ function deletingWord(index) {
 }
 
 function editingWord(element, index) {
-  // let editWord = prompt("hello");
   let editWord = prompt("Düzenlemenizi yapınız...", element);
-  if (!wordList.includes(editWord)) {
-    if (editWord === null) {
+  lowerEdit = editWord.toLowerCase();
+  if (!wordList.includes(lowerEdit)) {
+    if (lowerEdit === null) {
       return;
-    } else if (editWord !== null && editWord.trim() === "") {
+    } else if (lowerEdit !== null && lowerEdit.trim() === "") {
       alert("Lütfen bu alanı boş bırakmayınız!!!");
     } else {
       if (index > -1) {
         wordList.splice(index, 1);
         localStorage.setItem("words", JSON.stringify(wordList));
       }
-      wordList.push(`${editWord}`);
+      wordList.push(`${lowerEdit}`);
       localStorage.setItem("words", JSON.stringify(wordList));
       displayAllWords();
     }
