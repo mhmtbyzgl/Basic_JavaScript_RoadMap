@@ -1,5 +1,67 @@
-/* body {
-}
+/* html,
+body {
+  height: 100vh;
+} */
 
 .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  /* align-items: center; */
+}
+
+.accordion {
+  width: 50% !important;
+}
+/* .accordionBox {
+  align-items: center !important;
+} */
+
+#accordionExample {
+  align-items: center !important;
+}
+
+#uData {
+  overflow: scroll;
+  max-height: 460px;
+  width: max-content;
+}
+
+#uData span,
+img {
+  opacity: 1;
+  transition: all 0.4s;
+  transform: scale(1);
+}
+
+#uData span:hover,
+img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* #uFullname {
+  width: max-content;
+} */
+
+.content-1,
+.content-2 {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.content-1.show,
+.content-2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .content-1,
+.content-2 {
+  opacity: 0;
+  transform: translateY(-100px); 
+  transition: opacity 1.5s ease, transform 1.5s ease;
 } */
