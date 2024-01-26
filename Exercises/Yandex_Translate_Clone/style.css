@@ -1,0 +1,105 @@
+.nav-link {
+  margin-top: 5px !important;
+}
+
+.circle {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: darkgrey !important; /* Çemberin rengi */
+  border-radius: 50% !important; /* Çemberin köşelerini yuvarlama */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.languages {
+  width: 100% !important;
+}
+
+.languagesPage {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  z-index: 1;
+}
+
+.outSideLabel {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.inSideDiv {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  border: 2px dashed;
+  overflow: hidden;
+}
+
+.inSideDiv img {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.middlePage {
+  margin-top: 200px;
+}
+.helloImage {
+  width: 520px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(https://yastatic.net/s3/translate/v129.2/i/desktop/popularTranslations/popularTranslations.png);
+}
+.popularLanguages {
+  margin-top: 100px;
+}
+
+.popularLanguagesList {
+  border-radius: 16px;
+  padding: 24px;
+  column-count: 4;
+}
+.popularLanguagesList a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* .footer {
+  display: flex;
+  justify-content: space-between;
+  column-count: 4;
+} */
+
+/* .footer a,
+li {
+  color: white;
+  text-decoration: none;
+} */
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer li {
+  margin: 10px;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}

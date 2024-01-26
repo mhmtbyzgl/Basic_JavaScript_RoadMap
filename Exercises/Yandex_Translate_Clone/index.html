@@ -4,16 +4,158 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Yandex Trasnlate Clone</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
-  <h1>Hello, world!</h1>
+<body class="bg-black">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fw-bold fs-4" href="https://yandex.com">Yandex</a><a
+          class="navbar-brand text-light fw-bold fs-4" href="https://translate.yandex.com">Translate</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-light" href="#">Text</a>
+            <a class="nav-link text-light" href="#">Examples</a>
+            <a class="nav-link text-light" href="#">Sites</a>
+            <a class="nav-link text-light" href="#">Documents</a>
+            <a class="nav-link text-light" href="#">Images</a>
+            <div class="text-right">
+              <a class="circle text-light bg-dark" href="#"><i class="fa-regular fa-user fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="text-center mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row rounded-top d-flex justify-content-between">
+            <div class="col-md-4 bg-dark">
+              <button class="languages btn btn-dark" id="firstLanguage">English</button>
+            </div>
+            <div class="col-md-4 bg-dark">
+              <button class="btn btn-dark rounded-circle"><i class="fa-solid fa-right-left fa-2xs"
+                  style="color: #ffffff;"></i></button>
+            </div>
+            <div class="col-md-4 bg-dark">
+              <button class="btn btn-dark" id="secondLanguage">Turkish</button>
+            </div>
+          </div>
+          <div class="languagesPage bg-dark">
+            <div>
+              <div class="searchBar">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Search
+                    Languages</label>
+                  <input type="email" class="form-control border border-0 bg-secondary" id="exampleFormControlInput1"
+                    placeholder="Search languages">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <textarea class="col-md-12 border-dark bg-dark text-light" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label class="outSideLabel bg-dark">
+            <div class="inSideDiv bg-secondary">
+              <img src="img/Translating_Photo.png" alt="">
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="middlePage">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-light fs-1 fw-bold">Translator <br> for 100+ languages</h1>
+          <div class="text-light fs-5 mt-5">Yandex Translate — synchronized translation for 102 languages, predictive
+            typing,
+            dictionary with
+            transcription, pronunciation, context and usage examples, and many other features.</div>
+        </div>
+        <div class="col-md-6 helloImage"></div>
+      </div>
+    </div>
+
+    <div class="popularLanguages">
+      <div class="title text-light fs-4 fw-bold">The most popular languages for translation</div>
+      <div class="popularLanguagesList text-light bg-dark ">
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+        <a href="">English <i class="fa-solid fa-arrow-right-long fa-2xs"></i> Turkish</a><br>
+      </div>
+    </div>
+
+    <hr class="text-light">
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="">Support</a>
+        </li>
+        <li>
+          <a href="">Mobile Version</a>
+        </li>
+        <li>
+          <a href="">Help</a>
+        </li>
+        <li>
+          <a href="">Populer translations</a>
+        </li>
+        <li>
+          © 2011-2024 «<a href="https://yandex.com">Yandex</a>»
+        </li>
+        <li>
+          <a href="">Developers</a>
+        </li>
+        <li>
+          <a href="">User agreement</a>
+        </li>
+        <li>
+          <a href="">English</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
